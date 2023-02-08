@@ -1,0 +1,89 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <title>Lalit's Trust</title>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"> <img src="logo.jpg" class="img-logo" /></a>
+        <div class="img-logo">
+          <strong>Payment API Integration</strong>
+          <br />
+          <span>Marching towards better future...</span>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            <li><a href="index.html">ABOUT US</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <div class="text-box">
+        <h1>Payment API Integration</h1>
+        <br />
+        <p>
+          The greatest glory in living lies not in never falling,<br />
+          but in rising every time we fall. <br><br>
+          CLICK ON <strong id="pn">PAY NOW</strong>  BOTTON TO <strong id="donate">DONATE</strong>  THE AMOUNT 
+        </p>
+        <form>
+          <script
+            src="https://checkout.razorpay.com/v1/payment-button.js"
+            data-payment_button_id="pl_KXWV2aqT1OFKEj"
+            async
+          ></script>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <section class="footer">
+      <h4>About us</h4>
+      <p>
+        The Trust is very much dedicated for better tomorrow <br />in the field
+        of <strong>Education</strong> , <strong>Health</strong> ,
+        <strong>Technology</strong>.<br />Your small help can be life changing
+        for many out there.
+      </p>
+
+      <div class="icons">
+        <a href="https://www.linkedin.com/in/lalitkumar-patil-54a8b8243/" i class="fa fa-linkedin-square"></a>
+        <a href="https://github.com/lalitkumar88" i class="fa fa-github"></a>
+        <a href="https://twitter.com/LKPatil88?t=1AVwidKH-Pbglp1rnxm2Dg&s=08" i class="fa fa-twitter-square"></a>
+      </div>
+      <p>made by <br />Lalitkumar Manohar Patil</p>
+    </section>
+
+    <!------ Javascript for toggle menu ------>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
